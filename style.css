@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: Poppins;
+    background: linear-gradient(-45deg, #eb1717, #ff00b3, #1900ff, #2dff50, #0ffa1b);
+    background-size: 500% 500%;
+    background-attachment: fixed;
+    animation: bganim 30s ease-in-out infinite;
+}
+
+@keyframes bganim {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: var(--padding);
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+
+.card {
+    background: white;
+    border-radius: var(--padding);
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--padding);
+}
+
+#clock {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 2.4em;
+    text-align: center;
+}
